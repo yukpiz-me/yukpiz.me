@@ -47,7 +47,11 @@ a:hover {
 }
 
 .sub-content div {
-  margin:3px 0 3px 0;
+  margin:5px 0 5px 0;
+}
+
+.sub-content .comment {
+  margin: 5px 0 15px 0;
 }
 
 .sub-title {
