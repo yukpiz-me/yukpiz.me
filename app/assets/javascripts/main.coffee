@@ -1,3 +1,9 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://coffeescript.org/
+$ ->
+    offsetY = -10
+    time = 500
+    $('a[href^="#"]').click ->
+        target = $(this.hash)
+        targetY = target.offset().top+offsetY
+        $('html,body').animate({scrollTop: targetY}, time, 'swing')
+        window.history.pushState(null, null, this.hash)
+        return false
