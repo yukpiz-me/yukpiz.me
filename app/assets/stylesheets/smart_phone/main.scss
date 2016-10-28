@@ -113,10 +113,12 @@
     letter-spacing:.2em;
     text-align:center;
     font-size:2em;
-    font-family:'Comic Sans MS';
     color:#f1ece8;
     position:relative;
     top:4%;
+    p {
+      font-family:'Comic Sans MS';
+    }
   }
 }
 
